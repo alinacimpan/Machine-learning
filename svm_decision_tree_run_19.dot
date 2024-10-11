@@ -1,0 +1,16 @@
+
+    digraph Tree {
+    node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+    edge [fontname=helvetica] ;
+        0 [label=<X<SUB>0</SUB> &le; 2014<br/>gini = 0.3333333333333333<br/>samples = 3<br/>value = [1, 1, 1, 0]>, fillcolor="#e58139a4"] ;
+    1 [label="class = 3", fillcolor="#e58139ff"] ;
+    2 [label=<X<SUB>0</SUB> &le; 2017<br/>gini = 0.0<br/>samples = 2<br/>value = [1, 1, 0, 0]>, fillcolor="#e58139a4"] ;
+    5 [label="class = 2", fillcolor="#e58139ff"] ;
+    6 [label="class = 1", fillcolor="#e58139ff"] ;
+    2 -> 5 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+    2 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+    0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+    0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+
+    }
+    
